@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Heading(props:{text: string}) {
+function Heading(props) {
     const text = props.text
   return (
     <>

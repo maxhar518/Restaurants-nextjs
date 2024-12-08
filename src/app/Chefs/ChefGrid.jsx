@@ -2,18 +2,18 @@ import React from "react";
 import Image from "next/image"
 
 const chefs = [
-  { name: "Tahmina Rumi", role: "Chef", image: "../../../public/chef1.jpeg" },
-  { name: "Jorina Begum", role: "Chef", image: "../../../public/chef2.jpeg" },
-  { name: "M. Mohammad", role: "Chef", image: "../../../public/chef3.jpeg" },
-  { name: "Munna Kathy", role: "Chef", image: "../../../public/chef4.jpeg" },
-  { name: "Tahmina Rumi", role: "Cook", image: "../../../public/chef5.jpeg" },
-  { name: "Bisnu Devgon", role: "Chef", image: "/../../../public/chef6.jpeg" },
-  { name: "Motin Molladst", role: "Chef", image: "../../../public/chef7.jpeg" },
-  { name: "William Rumi", role: "Chef", image: "../../../public/chef8.jpeg" },
-  { name: "Kets William Roy", role: "Chef", image: "../../../public/chef9.jpeg" },
-  { name: "Mahmud Kholil", role: "Chef", image: "/../../../public/chef10.jpeg" },
-  { name: "Ataur Rahman", role: "Chef", image: "/../../../public/chef11.jpeg" },
-  { name: "Monalisa Holly", role: "Chef", image: "/../../../public/chef12.jpeg" },
+  { name: "Tahmina Rumi", role: "Chef", image: "/chef1.png" },
+  { name: "Jorina Begum", role: "Chef", image: "/chef2.png" },
+  { name: "M. Mohammad", role: "Chef", image: "/chef3.png" },
+  { name: "Munna Kathy", role: "Chef", image: "/chef4.png" },
+  { name: "Tahmina Rumi", role: "Cook", image: "/chef5.png" },
+  { name: "Bisnu Devgon", role: "Chef", image: "/chef6.png" },
+  { name: "Motin Molladst", role: "Chef", image: "/chef7.png" },
+  { name: "William Rumi", role: "Chef", image: "/chef8.png" },
+  { name: "Kets William Roy", role: "Chef", image: "/chef9.png" },
+  { name: "Mahmud Kholil", role: "Chef", image: "/chef10.png" },
+  { name: "Ataur Rahman", role: "Chef", image: "/chef11.png" },
+  { name: "Monalisa Holly", role: "Chef", image: "/chef12.png" },
 ];
 
 const ChefGrid = () => {
@@ -30,18 +30,18 @@ const ChefGrid = () => {
                 : "border-4 border-transparent hover:border-purple-600" // Hover effect for other boxes
             }`}
           >
-            {/* Chef Image */}
             <div className="flex-1">
               <Image
-                src={chef.image}
-                alt={chef.name}
-                width={40}
-                height={60}
+                src="/chef1.png"
+                alt="chef Image"
+                sizes="100vw"
+                // width={400}
+                // height={60}
                 className="w-full h-full object-cover rounded-t-lg"
+                layout="responsive"
               />
             </div>
 
-            {/* Static Information Section Below Image */}
             <div className="p-4 text-center">
               <h3 className="text-gray-800 font-bold text-lg">{chef.name}</h3>
               <p className="text-gray-600">{chef.role}</p>
@@ -53,4 +53,4 @@ const ChefGrid = () => {
   );
 };
 
-export default ChefGrid;
+export default ChefGrid;

@@ -4,7 +4,6 @@ const BlogPage = () => {
   return (
     <div>
       <Hero />
-      
     </div>
   )
 }

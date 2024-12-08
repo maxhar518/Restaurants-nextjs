@@ -1,20 +1,14 @@
 import React from 'react'
 import Hero from "./Hero"
 import ChefGrid from "./ChefGrid"
-import chef1 from "../assets/Chef Card 1.png";
-import chef2 from "../assets/Card 2.png";
-import chef3 from "../assets/Card 3.png";
-import chef4 from "../assets/Card 4.png";
-import Image from "next/image"
+import Image from 'next/image'
 
 const OurChefs = () => {
   return (
     <div>
       <Hero />
       <ChefGrid />
-
       <section className="bg-black md:px-[135px]   py-[50px]">
-
         <div className="flex flex-col justify-center items-center">
       <h1 className="md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font whitespace-nowrap font-greatVibes">
       Chefs
@@ -24,10 +18,10 @@ const OurChefs = () => {
         </h1>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[20px] mt-[50px]">
-          <Image src={chef1} alt="" className="w-[200px] md:w-[305px] md:h-[280px] cursor-pointer"/>
-          <Image src={chef2} alt="" className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
-          <Image src={chef3} alt="" className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
-          <Image src={chef4} alt="" className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
+          <Image src="/chef1.png" alt="" className="w-[200px] md:w-[305px] md:h-[280px] cursor-pointer"/>
+          <Image src='/chef2.png' alt="" className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
+          <Image src='/chef3.png' alt="" className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
+          <Image src='/chef4.png' alt="" className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
         </div>
       </section>
     </div>
