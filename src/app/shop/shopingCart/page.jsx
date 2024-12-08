@@ -10,19 +10,19 @@ const initialCartItems = [
   { name: "Cheese Butter", price: 11.99, quantity: 3, image: "/cart5.png" },
 ];
 
-const ShoppingCart: React.FC = () => {
+const ShoppingCart = () => {
   const [cartItems, setCartItems] = useState(initialCartItems);
   const [couponCode, setCouponCode] = useState("");
   const [discount, setDiscount] = useState(0);
 
-  const handleQuantityChange = (index: number, newQuantity: number) => {
+  const handleQuantityChange = (index, newQuantity) => {
     const updatedItems = cartItems.map((item, i) =>
       i === index ? { ...item, quantity: newQuantity } : item
     );
     setCartItems(updatedItems);
   };
 
-  const handleRemoveItem = (index: number) => {
+  const handleRemoveItem = (index) => {
     setCartItems(cartItems.filter((_, i) => i !== index));
   };
 

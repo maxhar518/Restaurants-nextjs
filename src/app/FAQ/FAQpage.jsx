@@ -28,10 +28,10 @@ const faqData = [
   },
 ];
 
-const FAQPage: React.FC = () => {
+const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index: number) => {
+  const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
