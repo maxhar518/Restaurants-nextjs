@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { IoChevronForwardOutline } from "react-icons/io5";
-import { FcGoogle } from "react-icons/fc";
-import { ImAppleinc } from "react-icons/im";
 
 export default function SignInPage() {
   return (
