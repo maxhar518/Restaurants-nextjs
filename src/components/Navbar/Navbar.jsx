@@ -13,9 +13,9 @@ export default function Navbar() {
     { name: "Home", href: "/", active: true },
     { name: "Menu", href: "/Manu"},
     { name: "Blog", href: "/blog" },
-    { name: "Pages", href: "/pages" },
+    { name: "check", href: "/check" },
     { name: "About", href: "/about" },
-    { name: "Shop", href: "/shop" },
+    { name: "Chefs", href: "/Chefs" },
     { name: "Contact", href: "/contact" },
   ]
 
@@ -65,7 +65,7 @@ export default function Navbar() {
           <Link href="/" className="text-white hover:text-[#FF9F0D] transition-colors">
             <Image src="/search.png" alt="search" width={24} height={24} />
           </Link>
-          <Link href="/" className="text-white hover:text-[#FF9F0D] transition-colors">
+          <Link href="/logIn" className="text-white hover:text-[#FF9F0D] transition-colors">
             <Image src="/user.png" alt="user" width={24} height={24} />
           </Link>
           <Link href="/" className="text-white hover:text-[#FF9F0D] transition-colors">

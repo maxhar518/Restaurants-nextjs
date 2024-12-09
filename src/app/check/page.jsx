@@ -7,9 +7,8 @@ function Hero() {
   return (
     <>
       <section className='bg-black px-3 md:px-[135px] flex flex-col justify-evenly md:flex-row  md:items-center py-[50px]'>
-        {/* Heading */}
         <div className='text-white w-full md:w-[50%]'>
-          <h1 className='md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font whitespace-nowrap'>
+          <h1 className='md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font whitespace-nowrap mt-12'>
             Its Quick & Amusing!
           </h1>
 
@@ -27,15 +26,6 @@ function Hero() {
               See More
             </button>
           </div>
-        </div>
-        <div className='mt-[50px] md:mt-0 '>
-          <Image
-            src="/food.png"
-            alt='Hero Image'
-            width={700}
-            height={500}
-            className=''
-          />
         </div>
       </section>
       <section className="bg-black px-3 md:px-[135px] flex flex-col justify-evenly md:flex-row  md:items-center py-[50px]">
@@ -82,10 +72,8 @@ function Hero() {
           </div>
         </div>
         <div className="mt-[50px] md:mt-0 ">
-          <Image src="/about1.png" alt="Hero Image" className="" width={336} height={536} />
           <div className="flex flex-col md:flex-row mt-[16px] md:mt-[0]">
-            <Image src="" alt="Hero Image" className="mr-[16px] pt-[40px]" />
-            <Image src="" alt="Hero Image" className="pt-[40px]" />
+            <Image src="/about3.png" alt="Hero Image" width={400} height={400} />
           </div>
         </div>
       </section>

@@ -10,9 +10,9 @@ export default function Aboutus() {
         <div className="container mx-auto flex px-5 py-24">
           <div className="flex flex-col md:flex-row items-center md:space-x-4 mt-2 ml-2">
             <Image
-              className="object-cover object-center w-336px h-536px mt-530px ml-300px radius-6px"
+              src= "/about1.jfif" width={309} height={536} 
               alt="hero"
-              src= "/about1.png" width={309} height={536} 
+              className="object-cover object-center  mt-530px ml-300px radius-6px"
             />
           </div>
           {/* Right Images */}
@@ -20,14 +20,14 @@ export default function Aboutus() {
             <Image
               className="object-cover object-center w-309px h-271px mt-584px ml-660px radius-6px"
               alt="image2"
-              src="/youget.png"
+              src="/about3.png"
               width={309} height={271}
             />
             {/* Bottom Image */}
             <Image
               className="object-cover object-center w-309px h-382px mt-882px ml-660px radius-6px"
               alt="image3"
-              src="/youget2.png"
+              src="/about4.png"
               width={309} height={382}
             />
           </div>

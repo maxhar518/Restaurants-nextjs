@@ -2,43 +2,38 @@ import React from "react";
 import Image from "next/image"
 
 const chefs = [
-  { name: "Tahmina Rumi", role: "Chef", image: "/chef1.png" },
-  { name: "Jorina Begum", role: "Chef", image: "/chef2.png" },
-  { name: "M. Mohammad", role: "Chef", image: "/chef3.png" },
-  { name: "Munna Kathy", role: "Chef", image: "/chef4.png" },
-  { name: "Tahmina Rumi", role: "Cook", image: "/chef5.png" },
-  { name: "Bisnu Devgon", role: "Chef", image: "/chef6.png" },
-  { name: "Motin Molladst", role: "Chef", image: "/chef7.png" },
-  { name: "William Rumi", role: "Chef", image: "/chef8.png" },
-  { name: "Kets William Roy", role: "Chef", image: "/chef9.png" },
-  { name: "Mahmud Kholil", role: "Chef", image: "/chef10.png" },
-  { name: "Ataur Rahman", role: "Chef", image: "/chef11.png" },
-  { name: "Monalisa Holly", role: "Chef", image: "/chef12.png" },
+  { name: "Tahmina Rumi", role: "Chef", img: "/chef1.png" },
+  { name: "Jorina Begum", role: "Chef", img: "/chef2.png" },
+  { name: "M. Mohammad", role: "Chef", img: "/chef3.png" },
+  { name: "Munna Kathy", role: "Chef", img: "/chef4.png" },
+  { name: "Tahmina Rumi", role: "Cook", img: "/pic1.png" },
+  { name: "Bisnu Devgon", role: "Chef", img: "/pic2.png" },
+  { name: "Motin Molladst", role: "Chef", img: "/pic3.png" },
+  { name: "William Rumi", role: "Chef", img: "/pic4.png" },
+  { name: "Kets William Roy", role: "Chef", img: "/pic5.png" },
+  { name: "Mahmud Kholil", role: "Chef", img: "/pic6.png" },
+  { name: "Ataur Rahman", role: "Chef", img: "/pic7.png" },
+  { name: "Monalisa Holly", role: "Chef", img: "/pic8.png" },
 ];
 
 const ChefGrid = () => {
   return (
-    <div className="p-6 mt-20"> {/* Adding mt-20 for margin top */}
-      {/* Grid with responsive columns */}
+    <div className="p-6 mt-20">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
         {chefs.map((chef, index) => (
           <div
             key={index}
-            className={`relative overflow-hidden rounded-lg shadow-lg bg-white flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl ${
-              index === 6
-                ? "border-4 border-purple-600" // Complete purple border for the 7th box
-                : "border-4 border-transparent hover:border-purple-600" // Hover effect for other boxes
-            }`}
+            className={`relative overflow-hidden rounded-lg shadow-lg bg-white flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl ${index === 0
+              ? "border-4 border-transparent hover:border-purple-600"
+              : "border-4 border-transparent hover:border-purple-600"
+              }`}
           >
-            <div className="flex-1">
+            <div className="reletive flex-1">
               <Image
-                src="/chef1.png"
-                alt="chef Image"
-                sizes="100vw"
-                // width={400}
-                // height={60}
-                className="w-full h-full object-cover rounded-t-lg"
-                layout="responsive"
+                src={chef.img}
+                alt="chef Img"
+                width={400}
+                height={60}
               />
             </div>
 
